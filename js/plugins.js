@@ -400,18 +400,18 @@ $(function() {
         var re = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 
         if ($email.val() == '' || !re.test($email.val())){
-            $email.parent().append('<span class="error">Please provide valid Email.</span>');
+            $email.parent().append('<span class="error">لطفا از ایمیل معتبر استفاده کنید.</span>');
             $email.addClass('inputError');
             hasError = true;
         }
         if($name.val() == '') {
-            $name.parent().append('<span class="error">Please provide Your name.</span>');
+            $name.parent().append('<span class="error">لطفا نام خود را وارد کنید.</span>');
             $name.addClass('inputError');
             hasError = true;
         }
 
         if($message.val() == '') {
-            $message.parent().append('<span class="error">Please enter details About Project.</span>');
+            $message.parent().append('<span class="error">لطفا توضیحاتی درباره درخواست یا پروژه خود برای ما بنویسید.</span>');
             $message.addClass('inputError');
             hasError = true;
         }
